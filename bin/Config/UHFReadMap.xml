@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<UHFReadMap>
+
+<!-- Available Memory Read Commands:
+		<MemoryRead memory=[MemoryType]/> 
+			memory can be: "EPCID" or "TagID"
+
+		<MemoryBankRead bank=[Bank] offset=[OffsetValue] length=[Length] />
+			bank can be: 
+						"0" - Reserved, 
+						"1" - EPC, 
+						"2" - TID, 
+						"3" - User
+--> 
+<!-- UHF Read Command:
+	<UHFRead type=[Read Type]> [ID of CardData or MatchRoutine to run] </UHFRead>
+		ReadType can be: 
+			"CardData" - Run a CardData command
+			"MatchRoutine" - Run a MatchRoutine command
+-->
+
+<!-- IdentifierList: A list of Identifier commands. 
+	Identifier commands specify areas of memory to read for identifying a tag type
+	<Identifier name=[Name for reference] id=[unique ID]>
+		[Memory Read Commands]
+	</Identifier>
+--> 
+	<IdentifierList>
+		<Identifier name="TID_Identifier" id="0">
+			<MemoryRead memory="TagID" />
+		</Identifier>
+		<Identifier name="Manufacturer" id="1">
+			<MemoryBankRead bank="0" offset="6" length="2" />
+		</Identifier>
+	</IdentifierList>
+
+<!-- MatchRoutineList: A list of MatchRoutine commands.
+	MatchRoutine commands specify an Identifier to run and a task to carry out
+	based on the data returned.
+	
+	<MatchRoutine id=[Unique ID] identifierid=[ID of Identifier command to run] >
+		<IdentifierMatch name=[Name for reference] id=[Expected Identifier value]>
+			[UHF Read Command]
+		</IdentifierMatch>
+	</MatchRoutine>
+
+	ReadType can be: 
+		"CardData" - Run a CardData command
+		"MatchRoutine" - Run a MatchRoutine command
+-->
+	<MatchRoutineList>
+		<MatchRoutine id="0" identifierid="0">
+			<IdentifierMatch name="Impinj_MonzaID01" id="E200106X">
+				<UHFRead type="MatchRoutine">1</UHFRead>
+			</IdentifierMatch>
+			<IdentifierMatch name="Impinj_MonzaID02" id="E200108X">
+				<UHFRead type="MatchRoutine">1</UHFRead>
+			</IdentifierMatch>
+			<IdentifierMatch name="Impinj_Monza4D" id="E2201100">
+				<UHFRead type="CardData">1</UHFRead>
+			</IdentifierMatch>
+		</MatchRoutine>
+		<MatchRoutine id="1" identifierid="1">
+			<IdentifierMatch name="Impinj_MonzaID_Auth" id="CXXX">
+				<UHFRead type="CardData">0</UHFRead>
+			</IdentifierMatch>
+		</MatchRoutine>
+	</MatchRoutineList>
+
+<!-- CardDataList: A list of data to read for each card type.
+	<CardData manufacturer=[Refernce name of manufacturer] model=[Reference name of model] id=[Unique ID]>
+		[Memory Read Commands]
+	</CardData>
+-->
+	<CardDataList>
+		<CardData manufacturer="Impinj" model="Monza/ID" id="0">
+			<MemoryBankRead bank="3" offset="0" length="8" />
+			<MemoryBankRead bank="2" offset="0" length="4" />
+			<MemoryBankRead bank="1" offset="0" length="12" />
+		</CardData>
+		<CardData manufacturer="Impinj" model="Monza/4D" id="1">
+			<MemoryBankRead bank="2" offset="0" length="12" />
+			<MemoryBankRead bank="1" offset="4" length="12" />
+		</CardData>
+	</CardDataList>
+
+<!-- UHFReadList: A list of UHF Read Commands to carry out. 
+	This is the level the ReadFromMemoryMap command starts at.
+	Once a match is found for a given tag the list will exit.
+-->
+	<UHFReadList>
+		<UHFRead type="MatchRoutine">0</UHFRead>
+	</UHFReadList>
+
+
+</UHFReadMap>

@@ -1,0 +1,36 @@
+08/03/16 10:56:49.510 - ERROR      - [ThreadID: 11148] - ----------------------
+08/03/16 10:56:49.510 - ERROR      - [ThreadID: 11148] - RTE8000LowLevelAPI.cpp(558) : LoadReaderDll() - Error loading DLL ReaderDll.dll - [87] 
+08/03/16 10:56:49.510 - ERROR      - [ThreadID: 11148] - RTE8000LowLevelAPI.cpp(623) : LoadReaderDll() - [caught]: Error loading DLL ReaderDll.dll - [87] 
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 11148] - ----------------------
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 11148] - RTE8000LowLevelAPI.cpp(558) : LoadReaderDll() - Error loading DLL ReaderDll.dll - [87] 
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 11148] - RTE8000LowLevelAPI.cpp(623) : LoadReaderDll() - [caught]: Error loading DLL ReaderDll.dll - [87] 
+08/03/16 10:56:49.526 - WARNING    - [ThreadID: 11148] - ReaderThread.cpp(1848) : ReaderThread::ErrorCallback() -  - Setting reader to errored state.
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 8636] - ----------------------
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 8636] - MiscAPI.cpp(274) : MMMReader_SignalEvent() - Not initialised
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 8636] - MiscAPI.cpp(290) : MMMReader_SignalEvent() - [caught]: Not initialised
+08/03/16 10:56:49.526 - WARNING    - [ThreadID: 8636] - ReaderThread.cpp(1848) : ReaderThread::ErrorCallback() -  - Setting reader to errored state.
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 11148] - ----------------------
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 11148] - RTE8000HighLevelAPI.cpp(499) : MMMReader_SetState() - Invalid state change
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 11148] - RTE8000HighLevelAPI.cpp(504) : MMMReader_SetState() - [caught]: Invalid state change
+08/03/16 10:56:49.526 - WARNING    - [ThreadID: 11148] - ReaderThread.cpp(1848) : ReaderThread::ErrorCallback() -  - Setting reader to errored state.
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 8636] - ----------------------
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 8636] - ParserAPI.cpp(134) : MMMReader_ParseShutdown() - Not initialised
+08/03/16 10:56:49.526 - ERROR      - [ThreadID: 8636] - ParserAPI.cpp(145) : MMMReader_ParseShutdown() - [caught]: Not initialised
+08/03/16 10:59:37.427 - ERROR      - [ThreadID: 5412] - ----------------------
+08/03/16 10:59:37.427 - ERROR      - [ThreadID: 5412] - RTE8000LowLevelAPI.cpp(558) : LoadReaderDll() - Error loading DLL ReaderDll.dll - [87] 
+08/03/16 10:59:37.427 - ERROR      - [ThreadID: 5412] - RTE8000LowLevelAPI.cpp(623) : LoadReaderDll() - [caught]: Error loading DLL ReaderDll.dll - [87] 
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 5412] - ----------------------
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 5412] - RTE8000LowLevelAPI.cpp(558) : LoadReaderDll() - Error loading DLL ReaderDll.dll - [87] 
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 5412] - RTE8000LowLevelAPI.cpp(623) : LoadReaderDll() - [caught]: Error loading DLL ReaderDll.dll - [87] 
+08/03/16 10:59:37.443 - WARNING    - [ThreadID: 5412] - ReaderThread.cpp(1848) : ReaderThread::ErrorCallback() -  - Setting reader to errored state.
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 5412] - ----------------------
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 5412] - RTE8000HighLevelAPI.cpp(499) : MMMReader_SetState() - Invalid state change
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 5412] - RTE8000HighLevelAPI.cpp(504) : MMMReader_SetState() - [caught]: Invalid state change
+08/03/16 10:59:37.443 - WARNING    - [ThreadID: 5412] - ReaderThread.cpp(1848) : ReaderThread::ErrorCallback() -  - Setting reader to errored state.
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 7400] - ----------------------
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 7400] - MiscAPI.cpp(274) : MMMReader_SignalEvent() - Not initialised
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 7400] - MiscAPI.cpp(290) : MMMReader_SignalEvent() - [caught]: Not initialised
+08/03/16 10:59:37.443 - WARNING    - [ThreadID: 7400] - ReaderThread.cpp(1848) : ReaderThread::ErrorCallback() -  - Setting reader to errored state.
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 7400] - ----------------------
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 7400] - ParserAPI.cpp(134) : MMMReader_ParseShutdown() - Not initialised
+08/03/16 10:59:37.443 - ERROR      - [ThreadID: 7400] - ParserAPI.cpp(145) : MMMReader_ParseShutdown() - [caught]: Not initialised

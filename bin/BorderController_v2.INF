@@ -1,0 +1,17 @@
+[update]
+newversion=2.1.1.35
+localversion=BorderController_v2.exe
+[files]
+count=1
+[file1]
+url=http://192.168.2.99/BorderController_v2.CAB
+newversion=2.1.1.35
+localversion=BorderController_v2.exe
+targetdir={app}
+descr=BorderController_v2
+compressed=0
+filesize=7168774
+[application]
+appupdate=1
+appname=BorderController_v2.exe
+appcomps=BorderController_v2.CAB

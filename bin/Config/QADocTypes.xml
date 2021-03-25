@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DocumentList xmlns="urn:documents">
+	<Document DocID="1">
+		<Name>Passport</Name>
+		<Images>
+			<IR>
+				<Active>true</Active>
+			</IR>
+			<Visible>
+				<Active>true</Active>
+			</Visible>		
+			<UV>
+				<Active>true</Active>
+			</UV>
+		</Images>
+		<MRZData ImageType="0" ThrowoutAmount="0.0" Context="soft">
+			<CodelineData CodelineNum="1">
+				<LeftMargin>
+					<Active>true</Active>
+					<ValidationRoutineID>13</ValidationRoutineID>
+					<ValidationParams>4</ValidationParams>
+				</LeftMargin>
+				<RightMargin>
+					<Active>true</Active>
+					<ValidationRoutineID>13</ValidationRoutineID>
+					<ValidationParams>4</ValidationParams>
+				</RightMargin>
+				<PositionTop>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>15.1,18.9</ValidationParams>
+				</PositionTop>
+				<PositionBottom>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>12.6,16.4</ValidationParams>
+				</PositionBottom>
+				<Skew>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>-3,3</ValidationParams>
+				</Skew>
+				<AverageStrokeWidth>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>0.9,1.1</ValidationParams>
+				</AverageStrokeWidth>
+				<BadChars>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</BadChars>
+				<BrokenChars>
+					<Active>false</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</BrokenChars>
+				<CharacterCount>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>44</ValidationParams>
+				</CharacterCount>
+				<CharacterHeight>
+					<Active>false</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>5,7</ValidationParams>
+				</CharacterHeight>
+				<CodelineWidth>
+					<Active>true</Active>
+					<ValidationRoutineID>11</ValidationRoutineID>
+					<ValidationParams>118</ValidationParams>
+				</CodelineWidth>
+				<GapBelow>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>4.55,8.15</ValidationParams>
+				</GapBelow>
+			</CodelineData>
+			<CodelineData CodelineNum="2">
+				<LeftMargin>
+					<Active>true</Active>
+					<ValidationRoutineID>13</ValidationRoutineID>
+					<ValidationParams>4</ValidationParams>
+				</LeftMargin>
+				<RightMargin>
+					<Active>true</Active>
+					<ValidationRoutineID>13</ValidationRoutineID>
+					<ValidationParams>4</ValidationParams>
+				</RightMargin>
+				<PositionTop>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>8.75,12.55</ValidationParams>
+				</PositionTop>
+				<PositionBottom>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>6.25,10.05</ValidationParams>
+				</PositionBottom>
+				<Skew>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>-3,3</ValidationParams>
+				</Skew>
+				<AverageStrokeWidth>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>0.9,1.1</ValidationParams>
+				</AverageStrokeWidth>
+				<BadChars>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</BadChars>
+				<BrokenChars>
+					<Active>false</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</BrokenChars>
+				<CharacterCount>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>44</ValidationParams>
+				</CharacterCount>
+				<CharacterHeight>
+					<Active>false</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>5,7</ValidationParams>
+				</CharacterHeight>
+				<CodelineWidth>
+					<Active>true</Active>
+					<ValidationRoutineID>11</ValidationRoutineID>
+					<ValidationParams>118</ValidationParams>
+				</CodelineWidth>
+				<PositionMiddle>
+					<Active>false</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>9.4,12.4</ValidationParams>
+				</PositionMiddle>
+			</CodelineData>
+		</MRZData>
+		<ValidationTests>
+			<ValidationGroup>
+				<GroupName>Codeline Tests</GroupName>
+				<Test TestID="106">
+					<Name>Spots Test</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</Test>
+				<Test TestID="110">
+					<Name>Valid Check Digits</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>
+				<Test TestID="199">
+					<Name>Valid Measurements</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>				
+			</ValidationGroup>
+		</ValidationTests>
+	</Document>
+
+	<Document DocID="2">
+		<Name>ePassport with BAC</Name>
+		<Images>
+			<IR>
+				<Active>true</Active>
+			</IR>
+			<Visible>
+				<Active>true</Active>
+			</Visible>		
+			<UV>
+				<Active>true</Active>
+			</UV>
+		</Images>
+		<MRZData ImageType="0" ThrowoutAmount="0" Context="hard">
+			<CodelineData CodelineNum="1">
+				<LeftMargin>
+					<Active>true</Active>
+					<ValidationRoutineID>13</ValidationRoutineID>
+					<ValidationParams>4</ValidationParams>
+				</LeftMargin>
+				<RightMargin>
+					<Active>true</Active>
+					<ValidationRoutineID>13</ValidationRoutineID>
+					<ValidationParams>4</ValidationParams>
+				</RightMargin>
+				<PositionTop>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>15.1,18.9</ValidationParams>
+				</PositionTop>
+				<PositionBottom>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>12.6,16.4</ValidationParams>
+				</PositionBottom>
+				<Skew>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>-3,3</ValidationParams>
+				</Skew>
+				<AverageStrokeWidth>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>0.9,1.1</ValidationParams>
+				</AverageStrokeWidth>
+				<BadChars>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</BadChars>
+				<BrokenChars>
+					<Active>false</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</BrokenChars>
+				<CharacterCount>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>44</ValidationParams>
+				</CharacterCount>
+				<CharacterHeight>
+					<Active>false</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>5,7</ValidationParams>
+				</CharacterHeight>
+				<CodelineWidth>
+					<Active>true</Active>
+					<ValidationRoutineID>11</ValidationRoutineID>
+					<ValidationParams>118</ValidationParams>
+				</CodelineWidth>
+				<GapBelow>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>4.55,8.15</ValidationParams>
+				</GapBelow>
+			</CodelineData>
+			<CodelineData CodelineNum="2">
+				<LeftMargin>
+					<Active>true</Active>
+					<ValidationRoutineID>13</ValidationRoutineID>
+					<ValidationParams>4</ValidationParams>
+				</LeftMargin>
+				<RightMargin>
+					<Active>true</Active>
+					<ValidationRoutineID>13</ValidationRoutineID>
+					<ValidationParams>4</ValidationParams>
+				</RightMargin>
+				<PositionTop>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>8.75,12.55</ValidationParams>
+				</PositionTop>
+				<PositionBottom>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>6.25,10.05</ValidationParams>
+				</PositionBottom>
+				<Skew>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>-3,3</ValidationParams>
+				</Skew>
+				<AverageStrokeWidth>
+					<Active>true</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>0.9,1.1</ValidationParams>
+				</AverageStrokeWidth>
+				<BadChars>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</BadChars>
+				<BrokenChars>
+					<Active>false</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</BrokenChars>
+				<CharacterCount>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>44</ValidationParams>
+				</CharacterCount>
+				<CharacterHeight>
+					<Active>false</Active>
+					<ValidationRoutineID>5</ValidationRoutineID>
+					<ValidationParams>5,7</ValidationParams>
+				</CharacterHeight>
+				<CodelineWidth>
+					<Active>true</Active>
+					<ValidationRoutineID>11</ValidationRoutineID>
+					<ValidationParams>118</ValidationParams>
+				</CodelineWidth>
+			</CodelineData>
+		</MRZData>
+		<ValidationTests>
+			<ValidationGroup>
+				<GroupName>Codeline Tests</GroupName>
+				<Test TestID="106">
+					<Name>Spots Test</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>0</ValidationParams>
+				</Test>
+				<Test TestID="110">
+					<Name>Valid Check Digits</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>
+				<Test TestID="199">
+					<Name>Valid Measurements</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>				
+			</ValidationGroup>
+			<ValidationGroup>
+				<GroupName>RFID Tests</GroupName>
+				<Test TestID="200">
+					<Name>Basic Access Control</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>
+				<Test TestID="201">
+					<Name>DG Presence Map (COM File) Present</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>7</ValidationRoutineID>
+					<ValidationParams></ValidationParams>
+				</Test>
+				<Test TestID="202">
+					<Name>Document Security Object (SOD File) Present</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>7</ValidationRoutineID>
+					<ValidationParams></ValidationParams>
+				</Test>
+				<Test TestID="203">
+					<Name>DG1 Present</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>7</ValidationRoutineID>
+					<ValidationParams></ValidationParams>
+				</Test>
+				<Test TestID="204">
+					<Name>DG2 Present</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>7</ValidationRoutineID>
+					<ValidationParams></ValidationParams>
+				</Test>
+				<Test TestID="205">
+					<Name>DG3 Present</Name>
+					<Active>False</Active>
+					<ValidationRoutineID>7</ValidationRoutineID>
+					<ValidationParams></ValidationParams>
+				</Test>
+				<Test TestID="235">
+					<Name>Signed Attributes Valid</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>
+				<Test TestID="236">
+					<Name>Signature Valid</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>
+				<Test TestID="219">
+					<Name>DG1 Hash Valid</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>
+				<Test TestID="220">
+					<Name>DG2 Hash Valid</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>
+				<Test TestID="221">
+					<Name>DG3 Hash Valid</Name>
+					<Active>False</Active>
+					<ValidationRoutineID>1</ValidationRoutineID>
+					<ValidationParams>1</ValidationParams>
+				</Test>
+				<Test TestID="237">
+					<Name>DG1 Decoded Successfully</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>7</ValidationRoutineID>
+					<ValidationParams></ValidationParams>
+				</Test>
+				<Test TestID="238">
+					<Name>DG2 Decoded Successfully</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>7</ValidationRoutineID>
+					<ValidationParams></ValidationParams>
+				</Test>
+				<Test TestID="253">
+					<Name>DG1 Matches MRZ</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>8</ValidationRoutineID>
+					<ValidationParams>QAMRZW_MRZDT_WHOLE_CODELINE</ValidationParams>
+				</Test>
+				<Test TestID="259">
+					<Name>Air baud rate</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>14</ValidationRoutineID>
+					<ValidationParams>848</ValidationParams>
+				</Test>	
+				<Test TestID="260">
+					<Name>Chip ID</Name>
+					<Active>true</Active>
+					<ValidationRoutineID>7</ValidationRoutineID>
+					<ValidationParams></ValidationParams>
+				</Test>		
+			</ValidationGroup>
+		</ValidationTests>
+	</Document>
+
+</DocumentList>
